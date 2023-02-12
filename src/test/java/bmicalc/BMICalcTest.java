@@ -2,6 +2,8 @@ package bmicalc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.text.DecimalFormat;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -35,8 +37,15 @@ public class BMICalcTest {
 	}
 	@Test
 	@DisplayName("Valid values")
-	// If the weight is 100 kg and the height is 190 cm, it has to return 0.002770083102
+	// If the weight is 65 kg and the height is 160 cm, it has to return 0.0025390625
 	public void bmiBothCorrect() {
 		assertEquals(0.0025390625, c.bmi(65, 160));
+	}
+	@Test
+	@DisplayName("Valid values 2")
+	// If the weight is 100 kg and the height is 160 cm, it has to return 0.0027700831
+	public void bmiBothCorrectBis() {
+		DecimalFormat f = new DecimalFormat("#0.00000000000");
+		assertEquals("0,00248015873", f.format(c.bmi(70, 168)));
 	}
 }
