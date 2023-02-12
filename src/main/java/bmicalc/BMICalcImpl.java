@@ -5,8 +5,11 @@ public class BMICalcImpl implements BMICalc {
 
 	public double bmi(double mass, double height) {
 		
-		if(mass <= 0 || height <=0) {
-			return  -1;
+		if(mass <= 0 ) {
+			throw new RuntimeException("Invalid mass value");
+		}
+		else if(height <=0) {
+			throw new RuntimeException("Invalid height value");
 		}
 		
 		double bmi = mass / Math.pow(height, 2);

@@ -15,27 +15,27 @@ public class BMICalcTest {
 	// bmi() tests
 	@Test
 	@DisplayName("Negative Weight")
-	// If the weight is a negative value, it has to return -1
+	// If the weight is a negative value, it has to throw an error
 	public void bmiNegativeWeight() {
-		assertEquals(-1, c.bmi(-1, 160));
+		assertThrows(RuntimeException.class, ()->c.bmi(-1, 160));
 	}
 	@Test
 	@DisplayName("Weight = 0")
-	// If the weight is equal to zero, it has to return -1
+	// If the weight is equal to zero, it has to throw an error
 	public void bmiZeroWeight() {
-		assertEquals(-1, c.bmi(0, 160));
+		assertThrows(RuntimeException.class, ()->c.bmi(0, 160));
 	}
 	@Test
 	@DisplayName("Negative Height")
-	// If the height is a negative value, it has to return -1
+	// If the height is a negative value, it has to throw an error
 	public void bmiNegativeHeight() {
-		assertEquals(-1, c.bmi(70, -1));
+		assertThrows(RuntimeException.class, ()->c.bmi(70, -1));
 	}
 	@Test
 	@DisplayName("Height = 0")
-	// If the height is equal to zero, it has to return -1
+	// If the height is equal to zero, it has to throw an error
 	public void bmiZeroHeight() {
-		assertEquals(-1, c.bmi(70, 0));
+		assertThrows(RuntimeException.class, ()->c.bmi(70, 0));
 	}
 	@Test
 	@DisplayName("Valid values")
