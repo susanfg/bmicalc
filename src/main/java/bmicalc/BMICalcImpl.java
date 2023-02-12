@@ -35,7 +35,29 @@ public class BMICalcImpl implements BMICalc {
 	}
 
 	public boolean abdominalObesity(double waistCircumference, char gender) {
-		return false;
+		boolean res;
+		gender = Character.toUpperCase(gender);
+		if(waistCircumference <= 0) {
+			throw new RuntimeException("Invalid waist circumference value");
+		}
+		else if(gender != 'M' &&  gender != 'F') {
+			throw new RuntimeException ("Invalid gender character");
+		}
+		else if(gender == 'M') {
+			if(waistCircumference <= 90) {
+				res = false;
+			}else {
+				res = true;
+			}
+		}
+		else {
+			if(waistCircumference <= 80) {
+				res = false;
+			}else {
+				res = true;
+			}
+		}
+		return res;
 	}
 
 }
