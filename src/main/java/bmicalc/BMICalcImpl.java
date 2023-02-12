@@ -14,16 +14,7 @@ public class BMICalcImpl implements BMICalc {
 		//bmi = Double.parseDouble(f.format(bmi));
 		return bmi;
 	}
-	/**
-	 * Categorize a person according to the BMI category:
-	 *   - UNDERWEIGHT for a BMI below 18.5
-	 *   - NORMAL for a BMI between 18.5 and 24.9
-	 *   - OVERWEIGHT for a BMI between 25.0 and 29.9
-	 *   - OBESE for a BMI above or equal 30.0
-	 *   
-	 * @param bmi Body Mass Index (BMI) value.
-	 * @return	  String representing the BMI category.
-	 */
+
 	public String category(double bmi) {
 		String res;
 		if(bmi <=0) {
