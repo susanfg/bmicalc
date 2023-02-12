@@ -43,7 +43,7 @@ public class BMICalcTest {
 	}
 	@Test
 	@DisplayName("Valid values 2")
-	// If the weight is 100 kg and the height is 160 cm, it has to return 0.0027700831
+	// If the weight is 70 kg and the height is 168 cm, it has to return 0,00248015873
 	public void bmiBothCorrectBis() {
 		DecimalFormat f = new DecimalFormat("#0.00000000000");
 		assertEquals("0,00248015873", f.format(c.bmi(70, 168)));
