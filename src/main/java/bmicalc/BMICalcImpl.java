@@ -13,8 +13,7 @@ public class BMICalcImpl implements BMICalc {
 		}
 		
 		double bmi = mass / Math.pow(height, 2);
-		//DecimalFormat f = new DecimalFormat("#.0000");
-		//bmi = Double.parseDouble(f.format(bmi));
+		
 		return bmi;
 	}
 

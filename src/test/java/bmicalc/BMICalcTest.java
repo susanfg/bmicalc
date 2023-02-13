@@ -3,7 +3,6 @@ package bmicalc;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import java.text.DecimalFormat;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -40,15 +39,16 @@ public class BMICalcTest {
 	@Test
 	@DisplayName("Valid values")
 	// If the weight is 65 kg and the height is 1.6 m, it has to return 25.390625
+	// The third parameter is delta, we accept a difference of 0.000001 between the expected value and the real value 
 	public void bmiBothCorrect() {
-		assertEquals("25,390625", c.bmi(65, 1.6));
+		assertEquals(25.390625, c.bmi(65, 1.6), 0.000001);
 	}
 	@Test
 	@DisplayName("Valid values 2")
 	// If the weight is 70 kg and the height is 1.85 m, it has to return 20.45288532
+	// We accept a difference of 0.0000001 between the expected value and the real value 
 	public void bmiBothCorrectBis() {
-		DecimalFormat f = new DecimalFormat("#0.0000000");
-		assertEquals( "20,4528853", f.format(c.bmi(70, 1.85)));
+		assertEquals( 20.4528853, c.bmi(70, 1.85), 0.0000001);
 	}
 	
 	// category() tests
