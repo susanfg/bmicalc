@@ -50,7 +50,7 @@ waistCircumference = 100, gender = 'M', it has to return TRUE
 waistCircumference = 90, gender = 'M', it has to return FALSE
 waistCircumference = 76, gender = 'M', it has to return FALSE
 
-![Use Cases Diagram] (https://github.com/susanfg/bmicalc/tree/main/Doc/CasosDeUso.pdf)
+![Use Cases Diagram] (https://github.com/susanfg/bmicalc/tree/main/Doc/CasosDeUso.png)
 
 
 
