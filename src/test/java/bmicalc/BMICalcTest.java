@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class BMICalcTest {
 	
 	private BMICalcImpl c = new BMICalcImpl();;
-	
+	private final double epsilon = 0.000001;
 	// bmi() tests
 	@Test
 	@DisplayName("Negative Weight")
@@ -41,15 +41,28 @@ public class BMICalcTest {
 	// If the weight is 65 kg and the height is 1.6 m, it has to return 25.390625
 	// The third parameter is delta, we accept a difference of 0.000001 between the expected value and the real value 
 	public void bmiBothCorrect() {
-		assertEquals(25.390625, c.bmi(65, 1.6), 0.000001);
+		assertEquals(25.390625, c.bmi(65, 1.6), epsilon);
 	}
 	@Test
 	@DisplayName("Valid values 2")
 	// If the weight is 70 kg and the height is 1.85 m, it has to return 20.45288532
-	// We accept a difference of 0.0000001 between the expected value and the real value 
+	// We accept a difference of 0.000001 between the expected value and the real value 
 	public void bmiBothCorrectBis() {
-		assertEquals( 20.4528853, c.bmi(70, 1.85), 0.0000001);
+		assertEquals( 20.4528853, c.bmi(70, 1.85), epsilon);
 	}
+	@Test
+	@DisplayName("Weight > 800 kg")
+	// If the weight is greater than 8000 kg, it is considered invalid and the method throws an error
+	public void weightGreater() {
+		assertThrows(RuntimeException.class, ()->c.bmi(900, 1.89));
+	}
+	@Test
+	@DisplayName("Height > 3 m")
+	// If the height is greater than 3 m, it is considered invalid and the method throws an error
+	public void heightGreater() {
+		assertThrows(RuntimeException.class, ()->c.bmi(70, 3.3));
+	}
+	
 	
 	// category() tests
 	
@@ -151,6 +164,18 @@ public class BMICalcTest {
 	// If the waist circumference is zero, it has to throw an error
 	public void ZeroFemale(){
 		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(0, 'M'));
+		}
+	@Test
+	@DisplayName("waist circumference > 1000, female")
+	// If the waist circumference is greater than 1000 cm, it has to throw an error
+	public void wcGreaterFemale(){
+		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(1200, 'F'));
+		}
+	@Test
+	@DisplayName("waist circumference > 0, male")
+	// If the waist circumference is greater than 1000 cm, it has to throw an error 
+	public void wcGreaterMale(){
+		assertThrows(RuntimeException.class, ()->c.abdominalObesity(1200, 'M'));
 		}
 	@Test
 	@DisplayName("Invalid gender character")

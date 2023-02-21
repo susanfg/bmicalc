@@ -9,8 +9,10 @@ These test cases were written on paper before implementing the tests.
 · Test cases for the method bmi():
 We are going to try with valid and invalid values for both parameters.
 weight < 0, it has to throw an error
+weight > 800, it has to throw an error
 weight = 0, it has to throw an error
 height < 0, it has to throw an error
+height > 3, it has to throw an error
 height = 0, it has to throw an error
 weight = 65, height = 1.6, it has to return 25.390625 
 weight = 70, height = 1.85, it has to return 20.4528853
@@ -36,6 +38,8 @@ waistCircumference = -1, gender = 'M', it has to throw an error
 waistCircumference = -1, gender = 'F', it has to throw an error
 waistCircumference = 0, gender = 'M', it has to throw an error
 waistCircumference = 0, gender = 'F', it has to throw an error
+waistCircumference > 1000, gender = 'M', it has to throw an error
+waistCircumference > 1000, gender = 'F', it has to throw an error
 waistCircumference = 170, gender = 'g', it has to throw an error
 waistCircumference = 170, gender = 'm', it has to return TRUE
 waistCircumference = 60, gender = 'f', it has to return FALSE
