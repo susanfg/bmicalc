@@ -83,11 +83,11 @@ Success Guarantee: The user receives valuable information that can help improve 
 Trigger: The user selects the option to determine if they have abdominal obesity.
 
 Main Success Scenario:
-* User enters waist circumference and gender.
-* System confirms the data is valid.
-* System compares the user information with the reference values in order to determine if they have abdominal obesity.
-* The system displays whether the user has abdominal obesity or not.
-* The system shows recommendations for maintaining a healthy weight or reducing the risk of health problems (depending on the result), and the user receives this information on the screen.
+1. User enters waist circumference and gender.
+2. System confirms the data is valid.
+3. System compares the user information with the reference values in order to determine if they have abdominal obesity.
+4. The system displays whether the user has abdominal obesity or not.
+5. The system shows recommendations for maintaining a healthy weight or reducing the risk of health problems (depending on the result), and the user receives this information on the screen.
 
 Alternate scenarios:
 - 1.a The user enters an invalid weight value.
