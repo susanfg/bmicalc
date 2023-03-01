@@ -90,13 +90,15 @@ Main Success Scenario:
 5. The system shows recommendations for maintaining a healthy weight or reducing the risk of health problems (depending on the result), and the user receives this information on the screen.
 
 Alternate scenarios:
-- 1.a The user enters an invalid weight value.
-- 1.b System shows an error message.
-- 1.c Back to step 1
+1.a The user enters an invalid weight value.
+1.b System shows an error message.
+1.c Back to step 1
+
 Or
-- 1.a The user enters an invalid gender value.
-- 1.b System shows an error message.
-- 1.c Back to step 1
+
+1.a The user enters an invalid gender value.
+1.b System shows an error message.
+1.c Back to step 1
 
 
 
