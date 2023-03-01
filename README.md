@@ -8,7 +8,8 @@ A biomedical calculator for the body mass index (BMI) and other parameters.
 These test cases were written on paper before implementing the tests.
 
 - Test cases for the method bmi():
-    - We are going to try with valid and invalid values for both parameters.
+
+We are going to try with valid and invalid values for both parameters.
     - weight < 0, it has to throw an error
     - weight > 800, it has to throw an error
     - weight = 0, it has to throw an error
