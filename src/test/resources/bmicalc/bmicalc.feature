@@ -56,7 +56,7 @@ As a user I want to calculate my BMI so that I will know if I have a healthy wei
    Given I have a bmi calculator
    When I input a weight equal to <w> 
    And I input a height equal to <h>
-   And I calculate the bmi
+   And The system calculates the bmi
    Then The calculator returns <v>
    
    Examples: 
