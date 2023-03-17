@@ -23,7 +23,7 @@ As a user I want to calculate my BMI so that I will know if I have a healthy wei
   @tag1
   Scenario Outline: The weight is invalid
     Given I have a bmi calculator
-    When I input an invalid weight equal to <n>
+    When I input a weight equal to <n>
     And I input a height equal to <h>
 		And I calculate the bmi of an invalid value
     Then The calculator throws an exception
@@ -38,7 +38,7 @@ As a user I want to calculate my BMI so that I will know if I have a healthy wei
   @tag2
   Scenario Outline: The height is invalid
     Given I have a bmi calculator
-    When I input an invalid height equal to <n>
+    When I input a height equal to <n>
     And I input a weight equal to <w>
 		And I calculate the bmi of an invalid value
     Then The calculator throws an exception

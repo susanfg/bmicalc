@@ -17,6 +17,10 @@ public class StepDefinitions {
 	private double bmi;
 	private final double epsilon = 0.000001;
 	private String category;
+	private double waistC;
+	private char gender;
+	private boolean abdO;
+	
 	@Before
 	public void initialization() {
 		c = null;
@@ -31,8 +35,8 @@ public class StepDefinitions {
 	}
 
 	@When("I input a weight equal to {double}")
-	public void i_input_a_weight_equal_to(Double int1) {
-		weight = int1;
+	public void i_input_a_weight_equal_to(Double double1) {
+		weight = double1;
 	}
 
 	@When("I input a height equal to {double}")
@@ -50,15 +54,6 @@ public class StepDefinitions {
 		Assertions.assertEquals(double1, bmi, epsilon);
 	}
 
-	@When("I input an invalid weight equal to {double}")
-	public void i_input_an_invalid_weight_equal_to(Double double1) {
-		weight = double1;
-	}
-
-	@When("I input an invalid height equal to {double}")
-	public void i_input_an_invalid_height_equal_to(Double double1) {
-		height = double1;
-	}
 
 	@When("I calculate the bmi of an invalid value")
 	public void i_calculate_the_bmi_of_an_invalid_value() {
@@ -84,4 +79,30 @@ public class StepDefinitions {
 		Assertions.assertEquals(string, category);
 	}
 	
+	// Abdominal Obesity
+	@When("I input my waist circumference of {double} cm")
+	public void i_input_my_waist_circumference_of_cm(Double double1) {
+	   waistC = double1;
+	}
+	@When("I input my gender {string}")
+	public void i_input_my_gender(String string) {
+	    gender = string.charAt(0);
+	}
+	@When("the system determines abdominal obesity")
+	public void the_system_determines_abdominal_obesity() {
+	    abdO = c.abdominalObesity(waistC, gender);
+	}
+	@Then("The system returns {string}")
+	public void the_system_returns(String string) {
+		boolean bool = Boolean.parseBoolean(string);
+		Assertions.assertEquals(bool, abdO);
+	}
+	@Then("The system compares an invalid value")
+	public void the_system_compares_an_invalid_value() {
+		try {
+			abdO = c.abdominalObesity(waistC, gender);
+		} catch (RuntimeException e) {
+			raiseException = true;
+		}
+	}
 }

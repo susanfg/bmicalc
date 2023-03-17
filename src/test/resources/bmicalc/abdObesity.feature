@@ -26,18 +26,19 @@ Feature: Determine abdominal obesity
     Given I have a bmi calculator
     When I input my waist circumference of <w> cm
     And I input my gender <g>
+    And the system determines abdominal obesity
     Then The system returns <r>
     Examples:
     | w   | g |r    |
     |95.0 |'F'|"true" | 
     |75.0 |'f'|"false"|
 	  |75.0 |'M'|"false"|
-	  |95.0 |'m'|"false"|
+	  |95.0 |'m'|"true"|
 
   @tag2
   Scenario Outline: Wrong wait circumference value
     Given I have a bmi calculator
-    When I input an invalid waist circumference of <w> cm
+    When I input my waist circumference of <w> cm
     And I input my gender <g>
     Then The system compares an invalid value
     And The calculator throws an exception
