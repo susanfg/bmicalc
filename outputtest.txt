@@ -1,0 +1,266 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< uma.gis.isa:bmicalc >-------------------------
+[INFO] Building BMICalc 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.0/maven-resources-plugin-3.3.0.pom
+Progress (1): 1.4/8.5 kBProgress (1): 2.7/8.5 kBProgress (1): 4.1/8.5 kBProgress (1): 5.5/8.5 kBProgress (1): 6.9/8.5 kBProgress (1): 8.2/8.5 kBProgress (1): 8.5 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.0/maven-resources-plugin-3.3.0.pom (8.5 kB at 31 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.0/maven-resources-plugin-3.3.0.jar
+Progress (1): 1.4/32 kBProgress (1): 2.7/32 kBProgress (1): 4.1/32 kBProgress (1): 5.5/32 kBProgress (1): 6.9/32 kBProgress (1): 8.2/32 kBProgress (1): 9.6/32 kBProgress (1): 11/32 kB Progress (1): 12/32 kBProgress (1): 14/32 kBProgress (1): 15/32 kBProgress (1): 16/32 kBProgress (1): 17/32 kBProgress (1): 19/32 kBProgress (1): 20/32 kBProgress (1): 21/32 kBProgress (1): 23/32 kBProgress (1): 24/32 kBProgress (1): 25/32 kBProgress (1): 27/32 kBProgress (1): 28/32 kBProgress (1): 30/32 kBProgress (1): 31/32 kBProgress (1): 32 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.0/maven-resources-plugin-3.3.0.jar (32 kB at 858 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.10.1/maven-compiler-plugin-3.10.1.pom
+Progress (1): 1.4/13 kBProgress (1): 2.7/13 kBProgress (1): 4.1/13 kBProgress (1): 5.5/13 kBProgress (1): 6.9/13 kBProgress (1): 8.2/13 kBProgress (1): 9.6/13 kBProgress (1): 11/13 kB Progress (1): 12/13 kBProgress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.10.1/maven-compiler-plugin-3.10.1.pom (13 kB at 450 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom
+Progress (1): 0.7/11 kBProgress (1): 11 kB                       Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/34/maven-plugins-34.pom (11 kB at 509 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.10.1/maven-compiler-plugin-3.10.1.jar
+Progress (1): 16/62 kBProgress (1): 32/62 kBProgress (1): 49/62 kBProgress (1): 62 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.10.1/maven-compiler-plugin-3.10.1.jar (62 kB at 1.9 MB/s)
+[INFO] 
+[INFO] --- resources:3.3.0:resources (default-resources) @ bmicalc ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.0/maven-filtering-3.3.0.pom
+Progress (1): 6.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.0/maven-filtering-3.3.0.pom (6.9 kB at 302 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom
+Progress (1): 4.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/36/maven-shared-components-36.pom (4.9 kB at 213 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom
+Progress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom (2.7 kB at 78 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom
+Progress (1): 14 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom (14 kB at 564 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
+Progress (1): 16/31 kBProgress (1): 31 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom (31 kB at 601 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom
+Progress (1): 5.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom (5.1 kB at 255 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.0/maven-filtering-3.3.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+Progress (1): 16/55 kBProgress (1): 32/55 kBProgress (1): 49/55 kBProgress (1): 55 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.0/maven-filtering-3.3.0.jar (55 kB at 1.5 MB/s)
+Progress (1): 16/587 kBProgress (2): 16/587 kB | 1.4/41 kBProgress (2): 16/587 kB | 2.7/41 kBProgress (2): 16/587 kB | 4.1/41 kBProgress (2): 16/587 kB | 5.5/41 kBProgress (2): 16/587 kB | 6.9/41 kBProgress (2): 16/587 kB | 8.2/41 kBProgress (2): 16/587 kB | 9.6/41 kBProgress (2): 16/587 kB | 11/41 kB Progress (2): 16/587 kB | 12/41 kBProgress (2): 16/587 kB | 14/41 kBProgress (2): 33/587 kB | 14/41 kBProgress (2): 33/587 kB | 15/41 kBProgress (2): 33/587 kB | 16/41 kBProgress (2): 33/587 kB | 17/41 kBProgress (2): 33/587 kB | 19/41 kBProgress (2): 33/587 kB | 20/41 kBProgress (2): 33/587 kB | 21/41 kBProgress (2): 33/587 kB | 23/41 kBProgress (2): 33/587 kB | 24/41 kBProgress (2): 33/587 kB | 25/41 kBProgress (2): 33/587 kB | 27/41 kBProgress (2): 33/587 kB | 28/41 kBProgress (2): 33/587 kB | 30/41 kBProgress (2): 33/587 kB | 31/41 kBProgress (2): 33/587 kB | 32/41 kBProgress (2): 33/587 kB | 34/41 kBProgress (2): 33/587 kB | 35/41 kBProgress (2): 33/587 kB | 36/41 kBProgress (2): 33/587 kB | 38/41 kBProgress (2): 33/587 kB | 39/41 kBProgress (2): 33/587 kB | 41/41 kBProgress (2): 33/587 kB | 41 kB   Progress (2): 49/587 kB | 41 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar (41 kB at 438 kB/s)
+Progress (1): 65/587 kBProgress (1): 82/587 kBProgress (1): 98/587 kBProgress (1): 114/587 kBProgress (1): 131/587 kBProgress (1): 147/587 kBProgress (1): 163/587 kBProgress (1): 180/587 kBProgress (1): 196/587 kBProgress (1): 213/587 kBProgress (1): 229/587 kBProgress (1): 245/587 kBProgress (1): 262/587 kBProgress (1): 278/587 kBProgress (1): 295/587 kBProgress (1): 311/587 kBProgress (1): 327/587 kBProgress (1): 344/587 kBProgress (1): 360/587 kBProgress (1): 376/587 kBProgress (1): 393/587 kBProgress (1): 409/587 kBProgress (1): 426/587 kBProgress (1): 442/587 kBProgress (1): 458/587 kBProgress (1): 475/587 kBProgress (1): 491/587 kBProgress (1): 508/587 kBProgress (1): 524/587 kBProgress (1): 540/587 kBProgress (1): 557/587 kBProgress (1): 573/587 kBProgress (1): 587 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (587 kB at 2.0 MB/s)
+[INFO] skip non existing resourceDirectory /Users/susan/Desktop/Ing_sw/Practica_1/bmicalc/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ bmicalc ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom
+Progress (1): 5.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom (5.8 kB at 112 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.11.1/plexus-compiler-api-2.11.1.pom
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.11.1/plexus-compiler-api-2.11.1.pom (1.1 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.11.1/plexus-compiler-2.11.1.pom
+Progress (1): 8.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.11.1/plexus-compiler-2.11.1.pom (8.1 kB at 301 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/6.6/plexus-components-6.6.pom
+Progress (1): 2.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/6.6/plexus-components-6.6.pom (2.7 kB at 65 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1.pom
+Progress (1): 8.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1.pom (8.0 kB at 379 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.11.1/plexus-compiler-manager-2.11.1.pom
+Progress (1): 1.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.11.1/plexus-compiler-manager-2.11.1.pom (1.1 kB at 60 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.11.1/plexus-compiler-javac-2.11.1.pom
+Progress (1): 1.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.11.1/plexus-compiler-javac-2.11.1.pom (1.2 kB at 57 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.11.1/plexus-compilers-2.11.1.pom
+Progress (1): 1.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.11.1/plexus-compilers-2.11.1.pom (1.3 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.11.1/plexus-compiler-api-2.11.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.11.1/plexus-compiler-manager-2.11.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.11.1/plexus-compiler-javac-2.11.1.jar
+Progress (1): 16/153 kBProgress (2): 16/153 kB | 16/27 kBProgress (3): 16/153 kB | 16/27 kB | 4.7 kB                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.11.1/plexus-compiler-manager-2.11.1.jar (4.7 kB at 179 kB/s)
+Progress (2): 16/153 kB | 27 kBProgress (2): 32/153 kB | 27 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.11.1/plexus-compiler-api-2.11.1.jar (27 kB at 962 kB/s)
+Progress (1): 49/153 kBProgress (1): 65/153 kBProgress (1): 81/153 kBProgress (1): 98/153 kBProgress (1): 114/153 kBProgress (1): 131/153 kBProgress (1): 147/153 kBProgress (1): 153 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar (153 kB at 1.4 MB/s)
+Progress (1): 1.4/264 kBProgress (2): 1.4/264 kB | 1.4/23 kBProgress (2): 2.7/264 kB | 1.4/23 kBProgress (2): 2.7/264 kB | 2.7/23 kBProgress (2): 4.1/264 kB | 2.7/23 kBProgress (2): 4.1/264 kB | 4.1/23 kBProgress (2): 5.5/264 kB | 4.1/23 kBProgress (2): 5.5/264 kB | 5.5/23 kBProgress (2): 6.9/264 kB | 5.5/23 kBProgress (2): 6.9/264 kB | 6.9/23 kBProgress (2): 8.2/264 kB | 6.9/23 kBProgress (2): 8.2/264 kB | 8.2/23 kBProgress (2): 9.6/264 kB | 8.2/23 kBProgress (2): 9.6/264 kB | 9.6/23 kBProgress (2): 11/264 kB | 9.6/23 kB Progress (2): 11/264 kB | 11/23 kB Progress (2): 12/264 kB | 11/23 kBProgress (2): 12/264 kB | 12/23 kBProgress (2): 12/264 kB | 14/23 kBProgress (2): 12/264 kB | 15/23 kBProgress (2): 12/264 kB | 16/23 kBProgress (2): 12/264 kB | 17/23 kBProgress (2): 14/264 kB | 17/23 kBProgress (2): 14/264 kB | 19/23 kBProgress (2): 15/264 kB | 19/23 kBProgress (2): 15/264 kB | 20/23 kBProgress (2): 16/264 kB | 20/23 kBProgress (2): 16/264 kB | 21/23 kBProgress (2): 16/264 kB | 23/23 kBProgress (2): 16/264 kB | 23 kB                                  Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.11.1/plexus-compiler-javac-2.11.1.jar (23 kB at 173 kB/s)
+Progress (1): 32/264 kBProgress (1): 49/264 kBProgress (1): 65/264 kBProgress (1): 81/264 kBProgress (1): 98/264 kBProgress (1): 114/264 kBProgress (1): 131/264 kBProgress (1): 147/264 kBProgress (1): 163/264 kBProgress (1): 180/264 kBProgress (1): 196/264 kBProgress (1): 212/264 kBProgress (1): 229/264 kBProgress (1): 245/264 kBProgress (1): 262/264 kBProgress (1): 264 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1.jar (264 kB at 1.2 MB/s)
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.0:testResources (default-testResources) @ bmicalc ---
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ bmicalc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.0.0-M7:test (default-test) @ bmicalc ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running bmicalc.bdd.RunCucumberTest
+
+@tag @tag1
+Scenario Outline: Correctly determines abdominal obesity # bmicalc/abdObesity.feature:33
+  Given I have a bmi calculator                          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 95.0 cm         # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 'F'                              # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  And the system determines abdominal obesity            # bmicalc.bdd.StepDefinitions.the_system_determines_abdominal_obesity()
+  Then The system returns "true"                         # bmicalc.bdd.StepDefinitions.the_system_returns(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Correctly determines abdominal obesity # bmicalc/abdObesity.feature:34
+  Given I have a bmi calculator                          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 75.0 cm         # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 'f'                              # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  And the system determines abdominal obesity            # bmicalc.bdd.StepDefinitions.the_system_determines_abdominal_obesity()
+  Then The system returns "false"                        # bmicalc.bdd.StepDefinitions.the_system_returns(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Correctly determines abdominal obesity # bmicalc/abdObesity.feature:35
+  Given I have a bmi calculator                          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 75.0 cm         # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 'M'                              # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  And the system determines abdominal obesity            # bmicalc.bdd.StepDefinitions.the_system_determines_abdominal_obesity()
+  Then The system returns "false"                        # bmicalc.bdd.StepDefinitions.the_system_returns(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Correctly determines abdominal obesity # bmicalc/abdObesity.feature:36
+  Given I have a bmi calculator                          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 95.0 cm         # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 'm'                              # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  And the system determines abdominal obesity            # bmicalc.bdd.StepDefinitions.the_system_determines_abdominal_obesity()
+  Then The system returns "true"                         # bmicalc.bdd.StepDefinitions.the_system_returns(java.lang.String)
+
+@tag @tag2
+Scenario Outline: Wrong wait circumference value # bmicalc/abdObesity.feature:48
+  Given I have a bmi calculator                  # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 80.0 cm # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 's'                      # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  Then The system compares an invalid value      # bmicalc.bdd.StepDefinitions.the_system_compares_an_invalid_value()
+  And The calculator throws an exception         # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: Wrong wait circumference value # bmicalc/abdObesity.feature:49
+  Given I have a bmi calculator                  # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input my waist circumference of 79.0 cm # bmicalc.bdd.StepDefinitions.i_input_my_waist_circumference_of_cm(java.lang.Double)
+  And I input my gender 'p'                      # bmicalc.bdd.StepDefinitions.i_input_my_gender(java.lang.String)
+  Then The system compares an invalid value      # bmicalc.bdd.StepDefinitions.the_system_compares_an_invalid_value()
+  And The calculator throws an exception         # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag1
+Scenario Outline: The weight is invalid       # bmicalc/bmicalc.feature:33
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 0.0          # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.6           # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag1
+Scenario Outline: The weight is invalid       # bmicalc/bmicalc.feature:34
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to -1.0         # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.8           # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag1
+Scenario Outline: The weight is invalid       # bmicalc/bmicalc.feature:35
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to -70.0        # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.99          # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag1
+Scenario Outline: The weight is invalid       # bmicalc/bmicalc.feature:36
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 800.01       # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 2.2           # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: The height is invalid       # bmicalc/bmicalc.feature:48
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a height equal to 0.0          # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I input a weight equal to 70.42         # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: The height is invalid       # bmicalc/bmicalc.feature:49
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a height equal to -1.0         # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I input a weight equal to 65.3          # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: The height is invalid       # bmicalc/bmicalc.feature:50
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a height equal to 3.01         # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I input a weight equal to 100.0         # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: The height is invalid       # bmicalc/bmicalc.feature:51
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a height equal to -1.72        # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I input a weight equal to 45.0          # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag2
+Scenario Outline: The height is invalid       # bmicalc/bmicalc.feature:52
+  Given I have a bmi calculator               # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a height equal to 5.0          # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And I input a weight equal to 98.0          # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I calculate the bmi of an invalid value # bmicalc.bdd.StepDefinitions.i_calculate_the_bmi_of_an_invalid_value()
+  Then The calculator throws an exception     # bmicalc.bdd.StepDefinitions.the_calculator_throws_an_exception()
+
+@tag @tag3
+Scenario Outline: Both input values are correct # bmicalc/bmicalc.feature:64
+  Given I have a bmi calculator                 # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 65.0           # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.6             # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And The system calculates the bmi             # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  Then The calculator returns 25.390625         # bmicalc.bdd.StepDefinitions.the_calculator_returns(java.lang.Double)
+
+@tag @tag3
+Scenario Outline: Both input values are correct # bmicalc/bmicalc.feature:65
+  Given I have a bmi calculator                 # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 70.0           # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.85            # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  And The system calculates the bmi             # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  Then The calculator returns 20.4528853        # bmicalc.bdd.StepDefinitions.the_calculator_returns(java.lang.Double)
+
+@tag @tag1
+Scenario Outline: Valid category         # bmicalc/category.feature:34
+  Given I have a bmi calculator          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 70.0    # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.95     # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  Then The system calculates the bmi     # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  And The system determines the category # bmicalc.bdd.StepDefinitions.the_system_determines_the_category()
+  And returns the category "UNDERWEIGHT" # bmicalc.bdd.StepDefinitions.returns_the_category(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Valid category         # bmicalc/category.feature:35
+  Given I have a bmi calculator          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 65.0    # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.68     # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  Then The system calculates the bmi     # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  And The system determines the category # bmicalc.bdd.StepDefinitions.the_system_determines_the_category()
+  And returns the category "NORMAL"      # bmicalc.bdd.StepDefinitions.returns_the_category(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Valid category         # bmicalc/category.feature:36
+  Given I have a bmi calculator          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 94.6    # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.87     # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  Then The system calculates the bmi     # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  And The system determines the category # bmicalc.bdd.StepDefinitions.the_system_determines_the_category()
+  And returns the category "OVERWEIGHT"  # bmicalc.bdd.StepDefinitions.returns_the_category(java.lang.String)
+
+@tag @tag1
+Scenario Outline: Valid category         # bmicalc/category.feature:37
+  Given I have a bmi calculator          # bmicalc.bdd.StepDefinitions.i_have_a_bmi_calculator()
+  When I input a weight equal to 100.2   # bmicalc.bdd.StepDefinitions.i_input_a_weight_equal_to(java.lang.Double)
+  And I input a height equal to 1.77     # bmicalc.bdd.StepDefinitions.i_input_a_height_equal_to(java.lang.Double)
+  Then The system calculates the bmi     # bmicalc.bdd.StepDefinitions.the_system_calculates_the_bmi()
+  And The system determines the category # bmicalc.bdd.StepDefinitions.the_system_determines_the_category()
+  And returns the category "OBESE"       # bmicalc.bdd.StepDefinitions.returns_the_category(java.lang.String)
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in bmicalc.bdd.RunCucumberTest
+[INFO] Running bmicalc.BMICalcTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in bmicalc.BMICalcTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 56, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.632 s
+[INFO] Finished at: 2023-03-17T19:22:33+01:00
+[INFO] ------------------------------------------------------------------------
