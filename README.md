@@ -103,7 +103,7 @@ Or
 
 ## User stories and Scenarios
 
-User stories
+**User stories**
 
 Feature: 
 
@@ -111,81 +111,137 @@ As a [role]
 I want [sw feature]
 So that [benefit]
 
-Scenario: 
+**Scenario:**
+ 
 Given [initial condition]
 When [events occur]
 Then [expected outcome]
 
 - Feature: Calculate BMI
+
 As a user
+
 I want to calculate my BMI 
+
 So that I will know if I have a healthy weight or not.
 
-Scenario 1: The weight is invalid
+
+**Scenario 1: The weight is invalid**
+
 Given that I want to calculate my BMI
+
 When I input a weight equal to -70 and that I select the option BMI
+
 Then the calculator shows an error message saying that the weight is invalid
 
-Scenario 2: The height is invalid
+
+**Scenario 2: The height is invalid**
+
 Given that I want to calculate my BMI
+
 When I input a height equal to -1.7 and that I select the option BMI
+
 Then the calculator shows an error message saying that the weight is invalid
 
-Scenario 3: Both values are correct
+
+**Scenario 3: Both values are correct**
+
 Given that I want to calculate my BMI
+
 When I enter weight = 60 and I enter height = 1.68 and select the option BMI
+
 Then the calculator gives me the value BMI = 21.258503401
 
+
 - Feature: Determine category
+
 As a user
+
 I want to determine my category according to my BMI.
+
 So that I will know if I am in a healthy category or not.
 
-Scenario 1: Valid category
+
+**Scenario 1: Valid category**
+
 Given that I want to determine my category
+
 When I input my weight <w> and I input my height <h>
+
 Then the system computes the BMI and returns the category <c>
+
 EXAMPLES
+
   w  |  h   | c           |
+
  70  | 1.95 | UNDERWEIGHT |
+
  65  | 1.68 | NORMAL      | 
+
  94.6| 1.87 | OVERWEIGHT  |
+
 100.2| 1.77 | OBESE       |
+
 
 The BMI value is computed by the system before determining the category. So any error produced when calculating the BMI value will be treated in that scenario. That is why we do not take into account error scenarios in this user story.
 
 - Feature: Determine abdominal obesity
 
 As a user
+
 I want to determine if I have abdominal obesity according to my waist circumference and gender
+
 So that I will know whether I must change my diet and exercise.
 
-Scenario 1: Male determines abdominal obesity
+
+**Scenario 1: Male determines abdominal obesity**
+
 Given that I want to determine if I have abdominal obesity
+
 When I input my waist circumference of <w> cm and gender "M" into the abdominal obesity determination feature
+
 Then the system returns a message saying: <r>.
+
 EXAMPLES
+
  w  |  r                                |
+
  95 | you have abdominal obesity        |
+
  75 | you do not have abdominal obesity |
 
-Scenario 2: Female determines abdominal obesity
+
+**Scenario 2: Female determines abdominal obesity**
+
 Given that I want to determine if I have abdominal obesity
+
 When I input my waist circumference of <w> cm and gender "F" into the abdominal obesity determination feature
+
 Then the system returns a message saying: <r>.
+
 EXAMPLES
+
  w  |  r                                |
+
  95 | you have abdominal obesity        |
+
  75 | you do not have abdominal obesity |
 
-Scenario 3: Wrong waist circumference value
+
+**Scenario 3: Wrong waist circumference value**
+
 Given that I want to determine if I have abdominal obesity
+
 When I input a waist circumference of -5 cm and gender "F" into the abdominal obesity determination feature
+
 Then the system returns an error message saying "Invalid waist circumference value"
 
-Scenario 4: Wrong gender
+**Scenario 4: Wrong gender**
+
 Given that I want to determine if I have abdominal obesity
+
 When I enter my waist circumference of 80 cm and gender value 's'
+
 Then the system returns an error message saying "Invalid gender character"
 
 
