@@ -223,7 +223,7 @@ public class View1 extends JFrame {
 
 	public double getWeight() {
 		try {
-			return Double.parseDouble(textWeight.getText());
+			return Double.parseDouble(textWeight.getText().replace(',','.'));
 		} catch (NumberFormatException e) {
 
 			lblRes.setText("Please, enter a valid value");
@@ -233,7 +233,7 @@ public class View1 extends JFrame {
 
 	public double getHeightU() {
 		try {
-			return Double.parseDouble(textHeight.getText());
+			return Double.parseDouble(textHeight.getText().replace(',','.'));
 		} catch (NumberFormatException e) {
 			lblRes.setText("Please, enter a valid value");
 			return -1;
@@ -242,7 +242,7 @@ public class View1 extends JFrame {
 
 	public double getWaistC() {
 		try {
-			return Double.parseDouble(textWaistC.getText());
+			return Double.parseDouble(textWaistC.getText().replace(',','.'));
 		} catch (NumberFormatException e) {
 			lblRes.setText("Please, enter a valid value");
 			return -1;
