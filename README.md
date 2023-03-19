@@ -244,5 +244,15 @@ When I enter my waist circumference of 80 cm and gender value 's'
 
 Then the system returns an error message saying "Invalid gender character"
 
+## User Graphic Interface
+
+Graphic interface prototype:
+
+![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterface.pdf)
+
+Graphic interface implementation:
+
+![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterfaceImplementation.png)
+
 
 
