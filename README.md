@@ -248,7 +248,7 @@ Then the system returns an error message saying "Invalid gender character"
 
 Graphic interface prototype:
 
-![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterface.pdf)
+![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterface.png)
 
 Graphic interface implementation:
 
