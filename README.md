@@ -246,11 +246,11 @@ Then the system returns an error message saying "Invalid gender character"
 
 ## User Graphic Interface
 
-Graphic interface prototype:
+**Graphic interface prototype:**
 
 ![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterface.png)
 
-Graphic interface implementation:
+**Graphic interface implementation:**
 
 ![Prototype](https://github.com/susanfg/bmicalc/blob/main/Doc/UserInterfaceImplementation.png)
 
