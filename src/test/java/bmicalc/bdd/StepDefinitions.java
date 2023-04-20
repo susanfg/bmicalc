@@ -31,7 +31,7 @@ public class StepDefinitions {
 
 	@Given("I have a bmi calculator")
 	public void i_have_a_bmi_calculator() {
-		c = new BMICalcImpl();
+		c = BMICalcImpl.getInstance();
 	}
 
 	@When("I input a weight equal to {double}")

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 public class BMICalcTest {
 	
-	private BMICalcImpl c = new BMICalcImpl();;
+	private BMICalcImpl c = BMICalcImpl.getInstance();
 	private final double epsilon = 0.000001;
 	// bmi() tests
 	@Test

@@ -13,7 +13,7 @@ public class Main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					BMICalcImpl model = new BMICalcImpl();
+					BMICalcImpl model = BMICalcImpl.getInstance();
 					View1 view = new View1();
 					Controller controller = new Controller	(model	, view);
 					view.registerController	(controller);
