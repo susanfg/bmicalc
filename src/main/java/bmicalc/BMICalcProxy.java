@@ -1,5 +1,6 @@
 package bmicalc;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class BMICalcProxy implements IMCStats, IMCHospital {
@@ -17,6 +18,11 @@ public class BMICalcProxy implements IMCStats, IMCHospital {
 	public Map<Double, String> imc(double altura, double peso) {
 		try {
 			Map<Double, String> imc = c.imc(altura, peso);
+			Iterator<Double> it = imc.keySet().iterator();
+			if(it.hasNext()) {
+				Double clave = it.next();
+				cntIMC += clave;
+			}
 			cntAltura += altura;
 			cntPeso += peso;
 			cntPacientes += 1;
