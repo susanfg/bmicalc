@@ -74,11 +74,41 @@ public class Main {
 			System.out.println();
 			System.out.println("Testing Proxy Pattern");
 			System.out.println("Your BMI and category are: " + imcp + " and you " + abdominalObp + "have abdominal obesity");
-			System.out.println("The mean height is :" + meanH);
-			System.out.println("The mean weight is :" + meanW);
-			System.out.println("The mean IMC is :" + meanIMC);
-			System.out.println("The number of patients that have used the calculator is :" + numP);
+			System.out.println("The mean height is : " + meanH);
+			System.out.println("The mean weight is : " + meanW);
+			System.out.println("The mean IMC is : " + meanIMC);
+			System.out.println("The number of patients that have used the calculator is : " + numP);
 			
+			/*
+			 * Decorator pattern
+			 */
+			
+			System.out.println();
+			System.out.println("Testing Decorator Pattern");
+			System.out.println("Calculadora europea");
+			BMICalcEuropean europe = new BMICalcEuropean(proxy);
+			europe.imc(height, weight);
+			europe.tieneObesidadAbdominal(gender, wc);
+			// we can check if using the decorator increments the number of patients and updates the mean values
+			System.out.println("Numero de pacientes: " + proxy.numPacientes());
+			System.out.println("Altura media: " + proxy.alturaMedia());
+			System.out.println("Peso medio: " + proxy.pesoMedio());
+			System.out.println("IMC medio: " + proxy.imcMedio());
+
+			System.out.println();
+			System.out.println("American Calculator");
+			BMICalcAmerican american = new BMICalcAmerican(proxy);
+			// converting to lb, feet and inches so we can test the conversion to kg, m and cm
+			double heightAm = height * 3.28084;
+			double weightAm = weight * 2.20462;
+			double wcAm = wc / 2.54;
+			american.imc(heightAm, weightAm);
+			american.tieneObesidadAbdominal(gender, wcAm);
+			System.out.println("Number of patients: " + proxy.numPacientes());
+			System.out.println("Mean height: " + proxy.alturaMedia());
+			System.out.println("Mean weight: " + proxy.pesoMedio());
+			System.out.println("Mean BMI: " + proxy.imcMedio());
+
 		}catch(RuntimeException e)   {
 			System.out.println(e.getMessage());
 		}
