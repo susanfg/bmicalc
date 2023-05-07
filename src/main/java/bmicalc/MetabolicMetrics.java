@@ -1,7 +1,6 @@
 package bmicalc;
 
 public interface MetabolicMetrics {
-	public enum Gender {FEMALE,MALE};
 
 	/**
 	 * Determine whether a person has abdominal obesity.

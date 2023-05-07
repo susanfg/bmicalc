@@ -2,7 +2,6 @@ package bmicalc;
 
 
 public interface CardiovascularMetrics extends MetabolicMetrics {
-	public enum ObesityCategory {UNDERWEIGHT,NORMAL, OVERWEIGHT, OBESE};
 	
 	/**
 	 * Calculate the Body Mass Index (BMI) of a person.
