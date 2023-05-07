@@ -72,7 +72,7 @@ public class StepDefinitions {
 
 	@Then("The system determines the category")
 	public void the_system_determines_the_category() {
-	  category = c.category(bmi);
+	  category = c.getObesityCategory(bmi);
 	}
 	@Then("returns the category {string}")
 	public void returns_the_category(String string) {

@@ -33,7 +33,7 @@ public class Controller implements ActionListener {
 			double height = view.getHeightU();
 			String result = "";
 			try {
-				result = model.category(model.calculateBodyMassIndex(weight, height));
+				result = model.getObesityCategory(model.calculateBodyMassIndex(weight, height));
 
 			} catch (RuntimeException error) {
 			}

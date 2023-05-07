@@ -15,7 +15,7 @@ public class BMICalcImpl implements CardiovascularMetrics {
 		return bmi;
 	}
 
-	public String category(double bmi) {
+	public String getObesityCategory(double bmi) {
 		String res;
 		if (bmi <= 0) {
 			res = "Invalid bmi value";

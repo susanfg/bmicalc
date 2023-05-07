@@ -70,74 +70,74 @@ public class BMICalcTest {
 	@DisplayName("Negative bmi")
 	// If the bmi is a negative value, it has to return an error message
 	public void negativeBmi() {
-		assertEquals("Invalid bmi value", c.category(-1));
+		assertEquals("Invalid bmi value", c.getObesityCategory(-1));
 	}
 	@Test
 	@DisplayName("bmi = 0")
 	// If the bmi is equal to zero, it has to return an error message
 	public void ZeroBmi() {
-		assertEquals("Invalid bmi value", c.category(0));
+		assertEquals("Invalid bmi value", c.getObesityCategory(0));
 	}
 	
 	@Test
 	@DisplayName("Return UNDERWEIGHT")
 	// If the bmi is below 18.5, it has to return UNERWEIGHT
 	public void underweightCheck() {
-		assertEquals("UNDERWEIGHT", c.category(15.87));
+		assertEquals("UNDERWEIGHT", c.getObesityCategory(15.87));
 	}
 	@Test
 	@DisplayName("Return UNDERWEIGHT (boundary case)")
 	// If the bmi is below 18.5, it has to return UNERWEIGHT, we try with a bmi = 18.49
 	public void underweightBoundCheck() {
-		assertEquals("UNDERWEIGHT", c.category(18.49));
+		assertEquals("UNDERWEIGHT", c.getObesityCategory(18.49));
 	}
 	@Test
 	@DisplayName("Return NORMAL")
 	// If the bmi is between 18.5 and 24.9, it has to return NORMAL
 	public void normalCheck() {
-		assertEquals("NORMAL", c.category(20.64));
+		assertEquals("NORMAL", c.getObesityCategory(20.64));
 	}
 	@Test
 	@DisplayName("Return NORMAL (lower bound case)")
 	// If the bmi is 18.5, it has to return NORMAL
 	public void normalLBoundCheck() {
-		assertEquals("NORMAL", c.category(18.5));
+		assertEquals("NORMAL", c.getObesityCategory(18.5));
 	}
 	@Test
 	@DisplayName("Return NORMAL (upper bound case)")
 	// If the bmi is 24.9, it has to return NORMAL
 	public void normalUBoundCheck() {
-		assertEquals("NORMAL", c.category(24.9));
+		assertEquals("NORMAL", c.getObesityCategory(24.9));
 	}
 	@Test
 	@DisplayName("Return OVERWEIGHT")
 	// If the bmi is between 25 and 29.9, it has to return OVERWEIGHT
 	public void overweightCheck() {
-		assertEquals("OVERWEIGHT", c.category(27.34));
+		assertEquals("OVERWEIGHT", c.getObesityCategory(27.34));
 	}
 	@Test
 	@DisplayName("Return OVERWEIGHT (lower bound case)")
 	// If the bmi is 25, it has to return OVERWEIGHT
 	public void overweightLBoundCheck() {
-		assertEquals("OVERWEIGHT", c.category(25));
+		assertEquals("OVERWEIGHT", c.getObesityCategory(25));
 	}
 	@Test
 	@DisplayName("Return OVERWEIGHT (upper bound case)")
 	// If the bmi is 29.9, it has to return OVERWEIGHT
 	public void overweightUBoundCheck() {
-		assertEquals("OVERWEIGHT", c.category(29.9));
+		assertEquals("OVERWEIGHT", c.getObesityCategory(29.9));
 	}
 	@Test
 	@DisplayName("Return OBESE")
 	// If the bmi is above or equal 30.0, it has to return OBESE
 	public void OBESECheck() {
-		assertEquals("OBESE", c.category(45.98));
+		assertEquals("OBESE", c.getObesityCategory(45.98));
 	}
 	@Test
 	@DisplayName("Return OBESE (boundary case)")
 	// If the bmi is 30.0, it has to return OBESE
 	public void obeseBoundCheck() {
-		assertEquals("OBESE", c.category(30.0));
+		assertEquals("OBESE", c.getObesityCategory(30.0));
 	}
 
 	// abdominalObesity()
