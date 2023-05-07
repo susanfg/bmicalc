@@ -78,7 +78,7 @@ public class StepDefinitions {
 	}
 	@Then("returns the category {string}")
 	public void returns_the_category(String string) {
-		Assertions.assertEquals(string, category);
+		Assertions.assertEquals(ObesityCategory.valueOf(string), category);
 	}
 	
 	// Abdominal Obesity
@@ -87,8 +87,8 @@ public class StepDefinitions {
 	   waistC = double1;
 	}
 	@When("I input my gender {string}")
-	public void i_input_my_gender(Gender genders) {
-	    gender = genders;
+	public void i_input_my_gender(String string) {
+	    gender = Gender.valueOf(string);
 	}
 	@When("the system determines abdominal obesity")
 	public void the_system_determines_abdominal_obesity() {
