@@ -16,32 +16,30 @@ public class BMICalcImpl implements CardiovascularMetrics, MetabolicMetrics {
 	}
 
 	public ObesityCategory getObesityCategory(double bmi) {
-		String res;
+		ObesityCategory res;
 		if (bmi <= 0) {
-			res = "Invalid bmi value";
+			res = null;
+			System.out.println("Invalid bmi value");
 		} else if (bmi > 0 && bmi < 18.5) {
-			res = "UNDERWEIGHT";
+			res = ObesityCategory.UNDERWEIGHT;
 
 		} else if (bmi >= 18.5 && bmi < 25) {
-			res = "NORMAL";
+			res = ObesityCategory.NORMAL;
 
 		} else if (bmi >= 25 && bmi < 30) {
-			res = "OVERWEIGHT";
+			res = ObesityCategory.OVERWEIGHT;
 
 		} else {
-			res = "OBESE";
+			res = ObesityCategory.OBESE;
 		}
 		return res;
 	}
 
 	public boolean abdominalObesity(double waistCircumference, Gender gender) {
 		boolean res;
-		gender = Character.toUpperCase(gender);
 		if (waistCircumference <= 0 || waistCircumference > 1000) {
 			throw new RuntimeException("Invalid waist circumference value");
-		} else if (gender != 'M' && gender != 'F') {
-			throw new RuntimeException("Invalid gender character");
-		} else if (gender == 'M') {
+		} else if (gender == Gender.MALE) {
 			if (waistCircumference <= 90) {
 				res = false;
 			} else {
