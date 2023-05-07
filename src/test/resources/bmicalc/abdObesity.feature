@@ -30,10 +30,10 @@ Feature: Determine abdominal obesity
     Then The system returns <r>
     Examples:
     | w   | g |r    |
-    |95.0 |'F'|"true" | 
-    |75.0 |'f'|"false"|
-	  |75.0 |'M'|"false"|
-	  |95.0 |'m'|"true"|
+    |95.0 |'FEMALE'|"true" | 
+    |75.0 |'FEMALE'|"false"|
+	  |75.0 |'MALE'|"false"|
+	  |95.0 |'MALE'|"true"|
 
   @tag2
   Scenario Outline: Wrong wait circumference value
@@ -45,5 +45,5 @@ Feature: Determine abdominal obesity
 
     Examples: 
       | w  | g |
-      | 80.0 |     's' |
-      | 79.0 |     'p' |
+      | 80000.0 |     'FEMALE' |
+      | 79000.0 |     'MALE' |
