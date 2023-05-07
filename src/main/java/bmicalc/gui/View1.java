@@ -250,11 +250,11 @@ public class View1 extends JFrame {
 		}
 		
 	}
-	public char getGender() {
+	public Gender getGender() {
 		try {
-			return (list.getSelectedValue().toString()).charAt(0);
+			return Gender.valueOf(list.getSelectedValue().toString());
 		}catch(NullPointerException e){
-			return 'e';
+			return null;
 		}
 	}
 	public void setResBMI(double res) {
