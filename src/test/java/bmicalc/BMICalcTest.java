@@ -145,92 +145,92 @@ public class BMICalcTest {
 	@DisplayName("Negative waist circumference male")
 	// If the waist circumference is a negative value, it has to throw an error
 	public void negativeMale(){
-		assertThrows(RuntimeException.class, ()->c.abdominalObesity(-1, 'M'));
+		assertThrows(RuntimeException.class, ()->c.abdominalObesity(-1, Gender.MALE));
 		}
 	@Test
 	@DisplayName("Negative waist circumference female")
 	// If the waist circumference is a negative value, it has to throw an error 
 	public void negativeFemale(){
-		assertThrows(RuntimeException.class, ()->c.abdominalObesity(-1, 'F'));
+		assertThrows(RuntimeException.class, ()->c.abdominalObesity(-1, Gender.FEMALE));
 		}
 	@Test
 	@DisplayName("waist circumference = 0, male")
 	// If the waist circumference is zero, it has to throw an error 
 	public void ZeroMale(){
-		assertThrows(RuntimeException.class, ()->c.abdominalObesity(0, 'M'));
+		assertThrows(RuntimeException.class, ()->c.abdominalObesity(0, Gender.MALE));
 		}
 	@Test
 	@DisplayName("waist circumference = 0, female")
 	// If the waist circumference is zero, it has to throw an error
 	public void ZeroFemale(){
-		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(0, 'M'));
+		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(0, Gender.MALE));
 		}
 	@Test
 	@DisplayName("waist circumference > 1000, female")
 	// If the waist circumference is greater than 1000 cm, it has to throw an error
 	public void wcGreaterFemale(){
-		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(1200, 'F'));
+		assertThrows(RuntimeException.class,  ()->c.abdominalObesity(1200, Gender.FEMALE));
 		}
 	@Test
 	@DisplayName("waist circumference > 0, male")
 	// If the waist circumference is greater than 1000 cm, it has to throw an error 
 	public void wcGreaterMale(){
-		assertThrows(RuntimeException.class, ()->c.abdominalObesity(1200, 'M'));
+		assertThrows(RuntimeException.class, ()->c.abdominalObesity(1200, Gender.MALE));
 		}
-	@Test
-	@DisplayName("Invalid gender character")
-	// If the gender is not an "m" or "f" (without discriminating lowercase and uppercase), it has to throw an error
-	public void invalidCharacter(){
-		assertThrows(RuntimeException.class, ()->c.abdominalObesity(170, 'g'));
-
-		}
-	@Test
-	@DisplayName("Lowercase Male")
-	// If the gender is a lowercase "m", it has to return the correct result for men. In this case it has to return TRUE
-	public void lowercaseMale(){
-		assertEquals(true, c.abdominalObesity(170, 'm'));
-		}
-	@Test
-	@DisplayName("Lowercase Female")
-	// If the gender is a lowercase "f", it has to return the correct result for female. In this case it has to return FALSE
-	public void lowercaseFemale(){
-		assertEquals(false, c.abdominalObesity(60, 'f'));
-		}
+//	@Test
+//	@DisplayName("Invalid gender character")
+//	// If the gender is not an "m" or "f" (without discriminating lowercase and uppercase), it has to throw an error
+//	public void invalidCharacter(){
+//		assertThrows(RuntimeException.class, ()->c.abdominalObesity(170, 'g'));
+//
+//		}
+//	@Test
+//	@DisplayName("Lowercase Male")
+//	// If the gender is a lowercase "m", it has to return the correct result for men. In this case it has to return TRUE
+//	public void lowercaseMale(){
+//		assertEquals(true, c.abdominalObesity(170, 'm'));
+//		}
+//	@Test
+//	@DisplayName("Lowercase Female")
+//	// If the gender is a lowercase "f", it has to return the correct result for female. In this case it has to return FALSE
+//	public void lowercaseFemale(){
+//		assertEquals(false, c.abdominalObesity(60, 'f'));
+//		}
 	@Test
 	@DisplayName("Female with abdominal obesity")
 	// If the waist circumference value is greater than 80 cm, and the gender is 'F', it has to return TRUE
 	public void abdObesityF() {
-		assertEquals(true, c.abdominalObesity(90, 'F'));
+		assertEquals(true, c.abdominalObesity(90, Gender.FEMALE));
 	}
 	@Test
 	@DisplayName("Female without abdominal obesity, on the limit")
 	// If the waist circumference value is 80 cm, and the gender is 'F', it has to return FALSE
 	public void boundaryF() {
-		assertEquals(false, c.abdominalObesity(80, 'F'));
+		assertEquals(false, c.abdominalObesity(80, Gender.FEMALE));
 	}
 	@Test
 	@DisplayName("Female without abdominal obesity")
 	// If the waist circumference value is 80 cm or less, and the gender is 'F', it has to return FALSE
 	public void noAbdObesityF() {
-		assertEquals(false, c.abdominalObesity(70, 'F'));
+		assertEquals(false, c.abdominalObesity(70, Gender.FEMALE));
 	}
 	@Test
 	@DisplayName("Male with abdominal obesity")
 	// If the waist circumference value is greater than 90 cm, and the gender is 'M', it has to return TRUE
 	public void abdObesityM() {
-		assertEquals(true, c.abdominalObesity(100, 'M'));
+		assertEquals(true, c.abdominalObesity(100, Gender.FEMALE));
 	}
 	@Test
 	@DisplayName("Male without abdominal obesity, on the limit")
 	// If the waist circumference value is 90 cm, and the gender is 'M', it has to return FALSE
 	public void boundaryM() {
-		assertEquals(false, c.abdominalObesity(90, 'M'));
+		assertEquals(false, c.abdominalObesity(90, Gender.MALE));
 	}
 	@Test
 	@DisplayName("Male without abdominal obesity")
 	// If the waist circumference value is 90 cm or less, and the gender is 'F', it has to return FALSE
 	public void noAbdObesityM() {
-		assertEquals(false, c.abdominalObesity(76, 'M'));
+		assertEquals(false, c.abdominalObesity(76, Gender.MALE));
 	}
 	
 }
