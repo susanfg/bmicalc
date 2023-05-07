@@ -46,7 +46,7 @@ public class StepDefinitions {
 
 	@When("The system calculates the bmi")
 	public void the_system_calculates_the_bmi() {
-		bmi = c.bmi(weight, height);
+		bmi = c.calculateBodyMassIndex(weight, height);
 	}
 
 	@Then("The calculator returns {double}")
@@ -58,7 +58,7 @@ public class StepDefinitions {
 	@When("I calculate the bmi of an invalid value")
 	public void i_calculate_the_bmi_of_an_invalid_value() {
 		try {
-			bmi = c.bmi(weight, height);
+			bmi = c.calculateBodyMassIndex(weight, height);
 		} catch (RuntimeException e) {
 			raiseException = true;
 		}

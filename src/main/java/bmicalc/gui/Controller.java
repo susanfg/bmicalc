@@ -22,7 +22,7 @@ public class Controller implements ActionListener {
 			double height = view.getHeightU();
 			double result = 0;
 			try {
-				result = model.bmi(weight, height);
+				result = model.calculateBodyMassIndex(weight, height);
 
 			} catch (RuntimeException error) {
 			}
@@ -33,7 +33,7 @@ public class Controller implements ActionListener {
 			double height = view.getHeightU();
 			String result = "";
 			try {
-				result = model.category(model.bmi(weight, height));
+				result = model.category(model.calculateBodyMassIndex(weight, height));
 
 			} catch (RuntimeException error) {
 			}

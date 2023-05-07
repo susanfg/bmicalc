@@ -16,51 +16,51 @@ public class BMICalcTest {
 	@DisplayName("Negative Weight")
 	// If the weight is a negative value, it has to throw an error
 	public void bmiNegativeWeight() {
-		assertThrows(RuntimeException.class, ()->c.bmi(-1, 160));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(-1, 160));
 	}
 	@Test
 	@DisplayName("Weight = 0")
 	// If the weight is equal to zero, it has to throw an error
 	public void bmiZeroWeight() {
-		assertThrows(RuntimeException.class, ()->c.bmi(0, 160));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(0, 160));
 	}
 	@Test
 	@DisplayName("Negative Height")
 	// If the height is a negative value, it has to throw an error
 	public void bmiNegativeHeight() {
-		assertThrows(RuntimeException.class, ()->c.bmi(70, -1));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(70, -1));
 	}
 	@Test
 	@DisplayName("Height = 0")
 	// If the height is equal to zero, it has to throw an error
 	public void bmiZeroHeight() {
-		assertThrows(RuntimeException.class, ()->c.bmi(70, 0));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(70, 0));
 	}
 	@Test
 	@DisplayName("Valid values")
 	// If the weight is 65 kg and the height is 1.6 m, it has to return 25.390625
 	// The third parameter is delta, we accept a difference of 0.000001 between the expected value and the real value 
 	public void bmiBothCorrect() {
-		assertEquals(25.390625, c.bmi(65, 1.6), epsilon);
+		assertEquals(25.390625, c.calculateBodyMassIndex(65, 1.6), epsilon);
 	}
 	@Test
 	@DisplayName("Valid values 2")
 	// If the weight is 70 kg and the height is 1.85 m, it has to return 20.45288532
 	// We accept a difference of 0.000001 between the expected value and the real value 
 	public void bmiBothCorrectBis() {
-		assertEquals( 20.4528853, c.bmi(70, 1.85), epsilon);
+		assertEquals( 20.4528853, c.calculateBodyMassIndex(70, 1.85), epsilon);
 	}
 	@Test
 	@DisplayName("Weight > 800 kg")
 	// If the weight is greater than 8000 kg, it is considered invalid and the method throws an error
 	public void weightGreater() {
-		assertThrows(RuntimeException.class, ()->c.bmi(900, 1.89));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(900, 1.89));
 	}
 	@Test
 	@DisplayName("Height > 3 m")
 	// If the height is greater than 3 m, it is considered invalid and the method throws an error
 	public void heightGreater() {
-		assertThrows(RuntimeException.class, ()->c.bmi(70, 3.3));
+		assertThrows(RuntimeException.class, ()->c.calculateBodyMassIndex(70, 3.3));
 	}
 	
 	

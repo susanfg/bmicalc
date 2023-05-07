@@ -2,7 +2,7 @@ package bmicalc;
 
 public class BMICalcImpl implements CardiovascularMetrics {
 
-	public double bmi(double mass, double height) {
+	public double calculateBodyMassIndex(double mass, double height) {
 
 		if (mass <= 0 || mass > 800) {
 			throw new RuntimeException("Invalid mass value");

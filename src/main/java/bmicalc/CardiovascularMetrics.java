@@ -11,7 +11,7 @@ public interface CardiovascularMetrics {
 	 * @param height Height of the person.
 	 * @return 		 The Body Mass Index (BMI) value.
 	 */
-	public double bmi(double mass, double height);
+	public double calculateBodyMassIndex(double mass, double height);
 	
 	/**
 	 * Categorize a person according to the BMI category:
