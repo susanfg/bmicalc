@@ -3,6 +3,8 @@ package bmicalc.bdd;
 import org.junit.jupiter.api.Assertions;
 
 import bmicalc.BMICalcImpl;
+import bmicalc.Gender;
+import bmicalc.ObesityCategory;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,9 +18,9 @@ public class StepDefinitions {
 	private boolean raiseException;
 	private double bmi;
 	private final double epsilon = 0.000001;
-	private String category;
+	private ObesityCategory category;
 	private double waistC;
-	private char gender;
+	private Gender gender;
 	private boolean abdO;
 	
 	@Before
@@ -85,8 +87,8 @@ public class StepDefinitions {
 	   waistC = double1;
 	}
 	@When("I input my gender {string}")
-	public void i_input_my_gender(String string) {
-	    gender = string.charAt(0);
+	public void i_input_my_gender(Gender genders) {
+	    gender = genders;
 	}
 	@When("the system determines abdominal obesity")
 	public void the_system_determines_abdominal_obesity() {
