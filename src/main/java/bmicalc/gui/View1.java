@@ -265,11 +265,11 @@ public class View1 extends JFrame {
 
 		}
 	}
-	public void setResCategory(String res) {
-		if(res.equals("")) {
+	public void setResCategory(ObesityCategory result) {
+		if(result == null) {
 			lblRes.setText("Please, enter a valid value");
 		}else {
-			lblRes.setText("You are in " + res + " category");
+			lblRes.setText("You are in " + result + " category");
 
 		}
 	}

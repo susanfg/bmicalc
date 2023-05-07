@@ -1,5 +1,6 @@
 package bmicalc.gui;
-
+import bmicalc.ObesityCategory;
+import bmicalc.Gender;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -31,7 +32,7 @@ public class Controller implements ActionListener {
 		} else if (command.equals("DetermineCategory")) {
 			double weight = view.getWeight();
 			double height = view.getHeightU();
-			String result = "";
+			ObesityCategory result;
 			try {
 				result = model.getObesityCategory(model.calculateBodyMassIndex(weight, height));
 
