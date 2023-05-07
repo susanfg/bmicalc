@@ -32,7 +32,7 @@ public class Controller implements ActionListener {
 		} else if (command.equals("DetermineCategory")) {
 			double weight = view.getWeight();
 			double height = view.getHeightU();
-			ObesityCategory result;
+			ObesityCategory result = null;
 			try {
 				result = model.getObesityCategory(model.calculateBodyMassIndex(weight, height));
 
@@ -41,7 +41,7 @@ public class Controller implements ActionListener {
 			view.setResCategory(result);
 		} else if (command.equals("DetermineAbdO")) {
 			double waistC = view.getWaistC();
-			char gender = view.getGender();
+			Gender gender = view.getGender();
 			boolean result;
 			try {
 				result = model.abdominalObesity(waistC, gender);
