@@ -34,7 +34,7 @@ public class BMICalcImpl implements CardiovascularMetrics {
 		return res;
 	}
 
-	public boolean abdominalObesity(double waistCircumference, char gender) {
+	public boolean abdominalObesity(double waistCircumference, Gender gender) {
 		boolean res;
 		gender = Character.toUpperCase(gender);
 		if (waistCircumference <= 0 || waistCircumference > 1000) {
