@@ -1,6 +1,6 @@
 package bmicalc;
 
-public class BMICalcImpl implements BMICalc {
+public class BMICalcImpl implements CardiovascularMetrics {
 
 	public double bmi(double mass, double height) {
 

@@ -1,7 +1,7 @@
 package bmicalc;
 
 
-public interface BMICalc {
+public interface CardiovascularMetrics {
 	
 	/**
 	 * Calculate the Body Mass Index (BMI) of a person.
