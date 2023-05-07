@@ -1,5 +1,6 @@
 package bmicalc.gui;
-
+import bmicalc.ObesityCategory;
+import bmicalc.Gender;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -140,7 +141,7 @@ public class View1 extends JFrame {
 
 		 list = new JList();
 		list.setModel(new AbstractListModel() {
-			String[] values = new String[] { "Female", "Male" };
+			String[] values = new String[] { "FEMALE", "MALE" };
 
 			public int getSize() {
 				return values.length;
