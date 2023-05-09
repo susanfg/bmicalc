@@ -22,6 +22,7 @@ import java.awt.event.ActionListener;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import javax.swing.AbstractListModel;
+import java.awt.Color;
 
 public class View1 extends JFrame {
 
@@ -52,7 +53,8 @@ public class View1 extends JFrame {
 
 		lblRes = new JLabel(
 				"Enter weight and height for BMI and Category. Waist circumference and gender for abdominal obesity.");
-		lblRes.setForeground(UIManager.getColor("Button.select"));
+		lblRes.setBackground(new Color(0, 0, 160));
+		lblRes.setForeground(new Color(0, 0, 160));
 		lblRes.setFont(new Font(font, Font.BOLD, 15));
 		contentPane.add(lblRes, BorderLayout.SOUTH);
 
@@ -76,7 +78,7 @@ public class View1 extends JFrame {
 		panel3.setLayout(new BorderLayout(0, 0));
 
 		JLabel lblWeight = new JLabel("Weight");
-		lblWeight.setForeground(UIManager.getColor(blight));
+		lblWeight.setForeground(new Color(0, 0, 0));
 		lblWeight.setFont(new Font(font, Font.PLAIN, 12));
 		panel3.add(lblWeight, BorderLayout.NORTH);
 
@@ -94,7 +96,7 @@ public class View1 extends JFrame {
 		panel2.setLayout(new BorderLayout(0, 0));
 
 		JLabel lblHeight = new JLabel("Height");
-		lblHeight.setForeground(UIManager.getColor(blight));
+		lblHeight.setForeground(new Color(0, 0, 0));
 		lblHeight.setFont(new Font(font, Font.PLAIN, 12));
 		panel2.add(lblHeight, BorderLayout.NORTH);
 
@@ -116,7 +118,7 @@ public class View1 extends JFrame {
 		panelAbdC.setLayout(new BorderLayout(0, 0));
 
 		JLabel lblAbdC = new JLabel("Waist Circumference");
-		lblAbdC.setForeground(UIManager.getColor(blight));
+		lblAbdC.setForeground(new Color(0, 0, 0));
 		lblAbdC.setFont(new Font(font, Font.PLAIN, 12));
 		panelAbdC.add(lblAbdC, BorderLayout.NORTH);
 
@@ -134,7 +136,7 @@ public class View1 extends JFrame {
 		panelGender.setLayout(new BorderLayout(0, 0));
 
 		JLabel lblGender = new JLabel("Gender");
-		lblGender.setForeground(UIManager.getColor(blight));
+		lblGender.setForeground(new Color(0, 0, 0));
 		lblGender.setFont(new Font(font, Font.PLAIN, 12));
 		panelGender.add(lblGender, BorderLayout.NORTH);
 
