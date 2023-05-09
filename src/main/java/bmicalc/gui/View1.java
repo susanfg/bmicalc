@@ -35,9 +35,9 @@ public class View1 extends JFrame {
 	private JButton btnCategory;
 	private JButton btnAbdO;
 	private JButton btnClean;
-	private final String font = "Menlo";
-	private final String blight="Button.light";
-	private final String errorM = "Please, enter a valid value.";
+	private static final String font = "Menlo";
+	private static final String blight="Button.light";
+	private static final String errorM = "Please, enter a valid value.";
 	/**
 	 * Create the frame.
 	 */
@@ -254,7 +254,7 @@ public class View1 extends JFrame {
 	}
 	public Gender getGender() {
 		try {
-			return Gender.valueOf(list.getSelectedValue().toString());
+			return Gender.valueOf(list.getSelectedValue());
 		}catch(NullPointerException e){
 			return null;
 		}
@@ -304,7 +304,7 @@ public class View1 extends JFrame {
 		textWeight.setText("");
 		textHeight.setText("");
 		textWaistC.setText("");
-		list.clearSelection();;
+		list.clearSelection();
 		lblRes.setText("Enter weight and height for BMI and Category. Waist circumference and gender for abdominal obesity.");
 	}
 
