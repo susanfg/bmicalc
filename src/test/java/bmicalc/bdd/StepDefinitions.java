@@ -3,6 +3,8 @@ package bmicalc.bdd;
 import org.junit.jupiter.api.Assertions;
 
 import bmicalc.BMICalcImpl;
+import bmicalc.Gender;
+import bmicalc.ObesityCategory;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -16,9 +18,9 @@ public class StepDefinitions {
 	private boolean raiseException;
 	private double bmi;
 	private final double epsilon = 0.000001;
-	private String category;
+	private ObesityCategory category;
 	private double waistC;
-	private char gender;
+	private Gender gender;
 	private boolean abdO;
 	
 	@Before
@@ -46,7 +48,7 @@ public class StepDefinitions {
 
 	@When("The system calculates the bmi")
 	public void the_system_calculates_the_bmi() {
-		bmi = c.bmi(weight, height);
+		bmi = c.calculateBodyMassIndex(weight, height);
 	}
 
 	@Then("The calculator returns {double}")
@@ -58,7 +60,7 @@ public class StepDefinitions {
 	@When("I calculate the bmi of an invalid value")
 	public void i_calculate_the_bmi_of_an_invalid_value() {
 		try {
-			bmi = c.bmi(weight, height);
+			bmi = c.calculateBodyMassIndex(weight, height);
 		} catch (RuntimeException e) {
 			raiseException = true;
 		}
@@ -72,11 +74,11 @@ public class StepDefinitions {
 
 	@Then("The system determines the category")
 	public void the_system_determines_the_category() {
-	  category = c.category(bmi);
+	  category = c.getObesityCategory(bmi);
 	}
 	@Then("returns the category {string}")
 	public void returns_the_category(String string) {
-		Assertions.assertEquals(string, category);
+		Assertions.assertEquals(ObesityCategory.valueOf(string), category);
 	}
 	
 	// Abdominal Obesity
@@ -86,7 +88,7 @@ public class StepDefinitions {
 	}
 	@When("I input my gender {string}")
 	public void i_input_my_gender(String string) {
-	    gender = string.charAt(0);
+	    gender = Gender.valueOf(string);
 	}
 	@When("the system determines abdominal obesity")
 	public void the_system_determines_abdominal_obesity() {

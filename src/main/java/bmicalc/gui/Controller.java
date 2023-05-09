@@ -1,5 +1,6 @@
 package bmicalc.gui;
-
+import bmicalc.ObesityCategory;
+import bmicalc.Gender;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -22,7 +23,7 @@ public class Controller implements ActionListener {
 			double height = view.getHeightU();
 			double result = 0;
 			try {
-				result = model.bmi(weight, height);
+				result = model.calculateBodyMassIndex(weight, height);
 
 			} catch (RuntimeException error) {
 			}
@@ -31,16 +32,16 @@ public class Controller implements ActionListener {
 		} else if (command.equals("DetermineCategory")) {
 			double weight = view.getWeight();
 			double height = view.getHeightU();
-			String result = "";
+			ObesityCategory result = null;
 			try {
-				result = model.category(model.bmi(weight, height));
+				result = model.getObesityCategory(model.calculateBodyMassIndex(weight, height));
 
 			} catch (RuntimeException error) {
 			}
 			view.setResCategory(result);
 		} else if (command.equals("DetermineAbdO")) {
 			double waistC = view.getWaistC();
-			char gender = view.getGender();
+			Gender gender = view.getGender();
 			boolean result;
 			try {
 				result = model.abdominalObesity(waistC, gender);

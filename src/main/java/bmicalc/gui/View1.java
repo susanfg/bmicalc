@@ -1,5 +1,6 @@
 package bmicalc.gui;
-
+import bmicalc.ObesityCategory;
+import bmicalc.Gender;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -140,7 +141,7 @@ public class View1 extends JFrame {
 
 		 list = new JList();
 		list.setModel(new AbstractListModel() {
-			String[] values = new String[] { "Female", "Male" };
+			String[] values = new String[] { "FEMALE", "MALE" };
 
 			public int getSize() {
 				return values.length;
@@ -249,11 +250,11 @@ public class View1 extends JFrame {
 		}
 		
 	}
-	public char getGender() {
+	public Gender getGender() {
 		try {
-			return (list.getSelectedValue().toString()).charAt(0);
+			return Gender.valueOf(list.getSelectedValue().toString());
 		}catch(NullPointerException e){
-			return 'e';
+			return null;
 		}
 	}
 	public void setResBMI(double res) {
@@ -264,11 +265,11 @@ public class View1 extends JFrame {
 
 		}
 	}
-	public void setResCategory(String res) {
-		if(res.equals("")) {
+	public void setResCategory(ObesityCategory result) {
+		if(result == null) {
 			lblRes.setText("Please, enter a valid value");
 		}else {
-			lblRes.setText("You are in " + res + " category");
+			lblRes.setText("You are in " + result + " category");
 
 		}
 	}
