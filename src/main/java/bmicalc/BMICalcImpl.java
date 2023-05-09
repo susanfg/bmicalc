@@ -10,9 +10,8 @@ public class BMICalcImpl implements CardiovascularMetrics, MetabolicMetrics {
 			throw new RuntimeException("Invalid height value");
 		}
 
-		double bmi = mass / Math.pow(height, 2);
 
-		return bmi;
+		return mass / Math.pow(height, 2);
 	}
 
 	public ObesityCategory getObesityCategory(double bmi) {
